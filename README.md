@@ -1,12 +1,12 @@
-# Awesome Firmware Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesomer Firmware Security
+ [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Awesome Firmware Security is a curated list of platform firmware resources, with a focus on security and testing. Created by [PreOS Security](https://preossec.com).
+Awesomer Firmware Security is a list of firmware-related security tools and resources that aims to expand upon the original Awesome Firmware Security list.
 
-**_ObDisclaimer_**: Firmware is software. But, while you can wipe and reinstall software on your hard drive, it is possible to brick your system when working with the firmware. Use care, and proceed at your own risk.
+This list takes a slightly different approach, and is fully open to all types of firmware - IoT, embedded, automotive, etc.
 
-**_NOTE_**: IoT / embedded operating system security is not included, unless they happen to overlap with platform security, such as Intel AMT, AMD PSP, Redfish, IPMI, BMC, OpenBMC. There are already awesome IoT/embedded operating system lists. eg: [Awesome IoT](https://github.com/HQarroum/awesome-iot)
+**Disclaimer**: It's extremely easy to break devices when messing with firmware. Take caution when doing so!
 
----
 ---
 
 ## Technologies and Terminology
