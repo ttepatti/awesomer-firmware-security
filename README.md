@@ -10,18 +10,23 @@ This list takes a slightly different approach, and is fully open to all types of
 ---
 
 ## Table of Contents
-- [Intro to Firmware Security]
-- [Firmware File Formats]
-- [Firmware Extraction and Analysis]
-- [Firmware Mounting]
-- [Firmware Emulation]
-- [Firmware Modification]
+- [Intro to Firmware Security](#intro-to-firmware-security)
+  - [Common Firmware-Based Attacks](#common-firmware-based-attacks)
+  - [Firmware-Based Real-World Exploits](#firmware-based-real-world-exploits)
+- [Firmware File Formats](#firmware-file-formats)
+- [Firmware Extraction and Analysis](firmware-extraction-and-analysis)
+- [Firmware Mounting](#firmware-mounting)
+- [Firmware Emulation](#firmware-emulation)
+- [Firmware Modification](#firmware-modification)
 - [Whitepapers / Presentations / Documentation](#whitepapers--presentations--documentation)
-- [Miscellaneous Terminology]
+- [Common Technologies](#common-technologies)
+  - [IoT Technologies](#iot-technologies)
+  - [Automotive Technologies](#automotive-technologies)
+- [Miscellaneous Terminology](#miscellaneous-terminology)
 
 ## Intro to Firmware Security
 
-### Common Firmware-Based Attack Types
+### Common Firmware-Based Attacks
 
 ### Firmware-Based Real-World Exploits
 
@@ -47,6 +52,12 @@ These items represent real-world attacks, exploits, or PoCs which either heavily
 ## Firmware Modification
 
 ## Whitepapers / Presentations / Documentation
+
+## Common Technologies
+
+### IoT Technologies
+
+### Automotive Technologies
 
 ## Miscellaneous Terminology
 
