@@ -5,13 +5,50 @@ Awesomer Firmware Security is a list of firmware-related security tools and reso
 
 This list takes a slightly different approach, and is fully open to all types of firmware - IoT, embedded, automotive, etc.
 
-**Disclaimer**: It's extremely easy to break devices when messing with firmware. Take caution when doing so!
+**Disclaimer**: It's extremely easy to break devices when messing with firmware, and you'll probably brick something at some point. Take caution when hacking, and have a good laugh when you break something!
 
 ---
 
-## Technologies and Terminology
+## Table of Contents
+- [Intro to Firmware Security]
+- [Firmware File Formats]
+- [Firmware Extraction and Analysis]
+- [Firmware Mounting]
+- [Firmware Emulation]
+- [Firmware Modification]
+- [Whitepapers / Presentations / Documentation](#whitepapers--presentations--documentation)
+- [Miscellaneous Terminology]
 
-Each of these technologies are awesome in their own right, and we'll make a standalone awesome list for them at some point. Meanwhile, they form our index.
+## Intro to Firmware Security
+
+### Common Firmware-Based Attack Types
+
+### Firmware-Based Real-World Exploits
+
+These items represent real-world attacks, exploits, or PoCs which either heavily interact with or are based on firmware-based exploits.
+
+* [BadBIOS](https://en.wikipedia.org/wiki/BadBIOS) - BadBIOS is the alleged firmware malware reported by Dragos.
+* [Evil Maid Attack](https://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html) - The Evil Maid attack is perhaps the most well-known firmware attack, where the victim leaves their sstem unattended and an attacker has some period of time with physical access to the system, for them to install firmware-level malware. For example, person leaves their laptop in their hotel room while out for dinner, and the attacker is posing as hotel room service.
+* [Hacking Team UEFI Malware](https://attack.mitre.org/wiki/Software/S0047) - Hacking Team is a company that sells exploits to governments and others. Amongst their offerings is a UEFI-based firmware attack for Windows PCs. The Hacking Team malware is one of the few existing known public UEFI blacklisted by [CHIPSEC](https://github.com/chipsec/chipsec).
+* [Fish2 IPMI Security](http://www.fish2.com/ipmi/) - a compilation of information about poor and/or insecure IPMI implementations. 
+* [PCI Leech](https://github.com/ufrisk/pcileech/) - PCILeech is PCI-based rogue hardware used to attack PCI interfaces of systems. Defense is [iommu](https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit) in combination with operating system iommu support.
+* [Rowhammer](https://en.wikipedia.org/wiki/Row_hammer) - Rowhammer is a new form of memory-based security attacks against systems. Defense is ECC memory.
+* [ThinkPwn](https://github.com/Cr4sh/ThinkPwn) - ThinkPwn is a UEFI malware PoC that originally targets ThinkPad systems. The ThinkPwn malware is one of the few existing known public UEFI blacklisted by CHIPSEC. Thinkpwn.efi is included in FPMurphy's UEFI Utilities, one malware binary amongst other useful tools, be careful if using those tools.
+* [USB Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe) - a Rubber Ducky is an example of rogue USB hardware, which lets the user configure the system to trick naive operating systems into thinking it is any number of devices.
+
+## Firmware File Formats
+
+## Firmware Extraction and Analysis
+
+## Firmware Mounting
+
+## Firmware Emulation
+
+## Firmware Modification
+
+## Whitepapers / Presentations / Documentation
+
+## Miscellaneous Terminology
 
 * [ACPICA](https://acpica.org) - The ACPI Component Architecture Project (ACPICA) provides a collection of cross-platform ACPI tools, such as acpidump.
 * [ACPI](http://uefi.org/acpi/) - ACPI is a platform firmware technology, originally intended to replace Plug and Play, MP, and Advanced Power Management. The UEFI Forum owns the spec and maintains an awesome list of ACPI-related documents.
@@ -71,26 +108,9 @@ Each of these technologies are awesome in their own right, and we'll make a stan
 
 ---
 
-## Threats
-
-* [BadBIOS](https://en.wikipedia.org/wiki/BadBIOS) - BadBIOS is the alleged firmware malware reported by Dragos.
-* [Evil Maid Attack](https://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html) - The Evil Maid attack is perhaps the most well-known firmware attack, where the victim leaves their sstem unattended and an attacker has some period of time with physical access to the system, for them to install firmware-level malware. For example, person leaves their laptop in their hotel room while out for dinner, and the attacker is posing as hotel room service.
-* [Hacking Team UEFI Malware](https://attack.mitre.org/wiki/Software/S0047) - Hacking Team is a company that sells exploits to governments and others. Amongst their offerings is a UEFI-based firmware attack for Windows PCs. The Hacking Team malware is one of the few existing known public UEFI blacklisted by [CHIPSEC](https://github.com/chipsec/chipsec).
-* [Fish2 IPMI Security](http://www.fish2.com/ipmi/) - a compilation of information about poor and/or insecure IPMI implementations. 
-* [PCI Leech](https://github.com/ufrisk/pcileech/) - PCILeech is PCI-based rogue hardware used to attack PCI interfaces of systems. Defense is [iommu](https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit) in combination with operating system iommu support.
-* [Rowhammer](https://en.wikipedia.org/wiki/Row_hammer) - Rowhammer is a new form of memory-based security attacks against systems. Defense is ECC memory.
-* [ThinkPwn](https://github.com/Cr4sh/ThinkPwn) - ThinkPwn is a UEFI malware PoC that originally targets ThinkPad systems. The ThinkPwn malware is one of the few existing known public UEFI blacklisted by CHIPSEC. Thinkpwn.efi is included in FPMurphy's UEFI Utilities, one malware binary amongst other useful tools, be careful if using those tools.
-* [USB Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe) - a Rubber Ducky is an example of rogue USB hardware, which lets the user configure the system to trick naive operating systems into thinking it is any number of devices.
-
 ---
 
-## Tools
-
-**_ObDisclaimer_**: Reading about firmware is one thing, but using these tools can be dangerous. You can brick your system - proceed with caution and at your own risk.
-
 ### Open Source
-
-**_NOTE_**: For security and safety purposes, open source software is auditable and verifiable. But beware that working with firmware is more dangerous than working with software installed on a hard disk you can wipe and reinstall. You can brick your system! Proceed with caution and at your own risk.
 
 * [ACPICA tools](https://acpica.org/downloads) - provides tools and a reference implementation of ACPI.
 * [acpidump](https://acpica.org/) - Cross-platform OS-present tool from ACPICA to dump and diagnose ACPI tables.
@@ -124,10 +144,6 @@ Each of these technologies are awesome in their own right, and we'll make a stan
 * [UEFITool](https://github.com/LongSoft/UEFITool) - UEFITool is a GUI program that parses firmware 'blobs', mainly UEFI ones.  In addition to the UEFITool Qt GUI tool, the UEFITool source project also includes a handful of non-GUI command line tools, including UEFIDump. UEFITool has two source trees to be aware of, master and new-engine.
 * [Visual UEFI](https://github.com/ionescu007/VisualUefi) - Visual UEFI is a plugin for Visual Studio that lets Visual Studio users do UEFI EDK2 development without having to know the details of the EDK2 build process, which is not like the Visual Studio build process. 
 * [zenfish IPMI tools](https://github.com/zenfish/ipmi) - IMPI security testing tools by Dan Farmer of [SATAN](http://www.fish2.com/satan/) fame.
-
-### Closed Source
-
-**_SPECIAL NOTE_**: Closed source software is not auditable or verifiably safe or secure. The risk of malware is higher, and with firmware the risk of bricking your system is always present. These are potentially "awesome" tools, but this list does not constitute a recommendation for use. Proceed with caution and at your own risk.
 
 
 
